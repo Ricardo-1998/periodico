@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Formulario</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+    <form action="#">
+            <fieldset>
+                <legend>Personal Data</legend>
+                <section>
+                    <article>
+                        <label for="dui">DUI</label>
+                        <input type="text" name="dui" id="dui" placeholder="04813412-8" required pattern="[0-9]{8}-[0-9]{1}">
+
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" id="firstname" placeholder="First Name" required pattern="[a-Z]" title="No se aceptan numeros o caracteres especiales">
+
+                        <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname" placeholder="lastName" required pattern="[a-Z]" title="No se aceptan numeros o caracteres especiales">
+
+                        <label for="gender">Gender</label>
+                        
+                        <input type="radio" name="gender" id="m" required> M
+                        <input type="radio" name="gender" id="f" required> F
+                       
+                        
+                        
+                    </article>
+
+                    <article>
+                        <label for="contactnumber">Contact Number</label>
+                        <input type="tel" name="contactnumber" id="contactnumber" required pattern="[0-9]{8}" title="Ingrese un numero de telefono verdadero">
+
+                        <label for="birthday">Birthday</label>
+                        <input type="date" name="date" id="date" placeholder="mm/dd/yy" required min="2000-01-01" max="2018-12-31">
+
+                        <label for="civilstatus">Civil Status</label>
+                        <select name="civilstatus" id="civilstatus" required>
+
+                            <option value="single">Single</option>
+                            <option value="married">married</option>
+                            <option value="widowed">Widowd</option>
+                            <option value="separated">Separated</option>
+                            <option value="divorced">Divorced</option>
+                        </select>
+
+                        <label for="img">Image</label>
+                        <input type="file" name="img" id="img" placeholder="No file chosen">
+
+                    </article>
+
+                        
+                </section>  
+            </fieldset>
+
+            <fieldset>
+                <legend>Work Experience</legend>
+                <section>
+                    <article>
+                        <textarea name="workexperience" id="workexperience" cols="255" rows="10" placeholder="Experience" required title="Escriba su experiencia laboral"></textarea>
+
+                    </article>
+                </section>
+            </fieldset>
+
+            <fieldset>
+                <legend>Academic Training</legend>
+                <section>
+                    <article>
+                        <textarea name="academictraining" id="academictraining" cols="255" rows="10" placeholder="Academic Training"required title="EScriba su experiencia academica"></textarea>
+                    </article>
+                </section>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Further Training</legend>
+                <section>
+                    <fieldset>
+                        <legend>Programming Languages</legend>
+                        <input type="checkbox" name="check[]"> Java
+                        <input type="checkbox" name="check[]"> C#
+                        <input type="checkbox" name="check[]"> Phyton
+                        <input type="checkbox" name="check[]"> C++
+                        <input type="checkbox" name="check[]"> Ruby
+                    </fieldset>
+                </section>
+                <section>
+                    <legend>Web Technologies</legend>
+                    <input type="checkbox" name="check[]"> HTML5
+                    <input type="checkbox" name="check[]"> CSS/CSS3
+                    <input type="checkbox" name="check[]"> materialize Css
+                    <input type="checkbox" name="check[]"> Javascript
+                    <input type="checkbox" name="check[]"> Node.js
+                    <input type="checkbox" name="check[]"> Spring MVC
+                </section>
+            </fieldset>
+            <input type="submit" value="Send">
+            <button><a href="periodico.html"></a>cancel</a></button>
+    </form>
+
+    
+</body>
+</html>
